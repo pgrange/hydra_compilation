@@ -14,7 +14,7 @@ on:
     tags:
       - '*'
     branches:
-      - 'split_images'
+      - 'main'
 
 env:
   REGISTRY: ghcr.io
