@@ -62,6 +62,8 @@ RUN BOOTSTRAP_HASKELL_NONINTERACTIVE=yes \
 RUN mkdir -p /srv/
 RUN git clone https://github.com/input-output-hk/hydra-poc.git /srv/hydra-poc
 WORKDIR /srv/hydra-poc
+RUN echo git checkout 322e4ca0 > /COMMIT
+RUN git checkout 322e4ca0
 
 RUN cabal configure
 RUN cabal update
